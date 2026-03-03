@@ -13,16 +13,17 @@
     </font>
     <br>
 
-    <h1><font size="7">TEST #0: BOOLEAN - Blank if failed.</font></h1>
+    <h1><font size="7">TEST #0: BOOLEAN</font></h1>
     <font size="6">
       <script>
         true;
+        false;
         document.write("PASSED")
       </script>
       <br><br>
     </font>
 
-    <h1><font size="7">TEST #1: SELECTION - Blank if failed.</font></h1>
+    <h1><font size="7">TEST #1: SELECTION</font></h1>
     <font size="6">
       <script>
         if (true) {
@@ -32,23 +33,38 @@
       <br><br>
     </font>
 
-    <h1><font size="7">TEST #2: DECLARATION - Blank if failed.</font></h1>
+    <h1><font size="7">TEST #2: DECLARATION</font></h1>
     <font size="6">
       <script>
-        var x;
+        var test2_x;
         document.write("PASSED")
       </script>
       <br><br>
     </font>
 
-    <h1><font size="7">TEST #3: ASSIGNMENT - Blank if failed.</font></h1>
+    <h1><font size="7">TEST #3: ASSIGNMENT</font></h1>
     <font size="6">
       <script>
-        var x = true;
+        var test3_x = true;
         document.write("PASSED")
       </script>
       <br><br>
     </font>
   
+    <h1><font size="7">TEST #4: CONSISTENT ENVIROMENT</font></h1>
+    <font size="6">
+      <script>
+        var test4_x = true;
+      </script>
+      <script>
+        if (test4_x) {
+          document.write("PASSED")
+        } else {
+          document.write("FAILED")
+        }
+      </script>
+      <br><br>
+    </font>
+
   </body>
 </html>
