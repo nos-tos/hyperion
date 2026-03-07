@@ -4,17 +4,19 @@
     <!-- Images must have fixed sizes for Netscape 2.0, or the browser cannot add text to the document. -->
     <img width="640" height="120" src="./banner.gif" alt="The Hyperion banner">
     
-    <h1><font size="7">About this test suite</font></h1>
+    <h1><font size="7">About the test suite</font></h1>
 
     <font size="5">
       The following tests are written to test a browser's capabilities.<br>
       It uses browser errors to not execute code when tests fail.<br>
       In order to see the inner workings of each test, look at the page source.<br><br>
     </font>
+    
+    <h2><font size="7">Tests</font></h2>
     <br>
 
-    <h1><font size="7">TEST #0: BOOLEAN</font></h1>
-    <font size="6">
+    <h1><font size="6">TEST #0: BOOLEAN</font></h1>
+    <font size="4">
       <script>
         true;
         false;
@@ -23,8 +25,8 @@
       <br><br>
     </font>
 
-    <h1><font size="7">TEST #1: SELECTION</font></h1>
-    <font size="6">
+    <h1><font size="6">TEST #1: SELECTION</font></h1>
+    <font size="4">
       <script>
         if (true) {
           document.write("PASSED")
@@ -33,8 +35,8 @@
       <br><br>
     </font>
 
-    <h1><font size="7">TEST #2: DECLARATION</font></h1>
-    <font size="6">
+    <h1><font size="6">TEST #2: DECLARATION</font></h1>
+    <font size="4">
       <script>
         var test2_x;
         document.write("PASSED")
@@ -42,8 +44,8 @@
       <br><br>
     </font>
 
-    <h1><font size="7">TEST #3: ASSIGNMENT</font></h1>
-    <font size="6">
+    <h1><font size="6">TEST #3: ASSIGNMENT</font></h1>
+    <font size="4">
       <script>
         var test3_x = true;
         document.write("PASSED")
@@ -51,8 +53,8 @@
       <br><br>
     </font>
   
-    <h1><font size="7">TEST #4: CONSISTENT ENVIROMENT</font></h1>
-    <font size="6">
+    <h1><font size="6">TEST #4: CONSISTENT ENVIROMENT</font></h1>
+    <font size="4">
       <script>
         var test4_x = true;
       </script>
@@ -66,8 +68,8 @@
       <br><br>
     </font>
 
-    <h1><font size="7">TEST #5: EQUALITY OPERATOR</font></h1>
-    <font size="6">
+    <h1><font size="6">TEST #5: EQUALITY OPERATOR</font></h1>
+    <font size="4">
       <script>
         var test5_flag = true;
 
@@ -86,33 +88,40 @@
           document.write("FAILED")
         }
       </script>
-      <br><br><br>
+      <br><br>    
+    </font>
+    
+    <br>
 
-      <u></u><h1><font size="7">RANDOM TESTS</font></h1></u>
-      <font size="5">
-        The following tests are written in a non-modular approach.<br>
-        This means that they will eventually be re-written in a sequential order that makes sense.<br>
-        However, for now, they are quick tests to assess if a browser can perform a specific action,<br>
-        instead of testing if a browser has a specific feature.<br><br>
-      </font>
+    <h1><font size="7">About random tests</font></h1>
 
-      <h1><font size="7">TEST #a: Object constructor</font></h1>
-      <font size="6">
-        <script>
-          var testA_obj = new Object();
-          document.write("PASSED")
-        </script>
-        <br><br>
-      </font>
+    <font size="5">
+      The following tests are written in a non-modular approach.<br>
+      This means that they will eventually be re-written in a sequential order that makes sense.<br>
+      However, for now, they are quick tests to assess if a browser can perform a specific action,<br>
+      instead of testing if a browser has a specific feature.<br><br>
+    </font>
 
-      <h1><font size="7">TEST #b: Shorthand-Object constructor</font></h1>
-      <font size="6">
-        <script>
-          var testB_obj = {}
-          document.write("PASSED")
-        </script>
-        <br><br>
-      </font>
+    <h2><font size="7">Tests</font></h2>
+    <br>
+
+    <h1><font size="6">TEST #A: OBJECT CONSTRUCTION</font></h1>
+    <font size="4">
+      <script>
+        var testA_obj = new Object();
+        document.write("PASSED")
+      </script>
+      <br><br>
+    </font>
+
+    <h1><font size="6">TEST #B: SHORTHAND-OBJECT NOTATION</font></h1>
+    <font size="4">
+      <script>
+        var testB_obj = {}
+        document.write("PASSED")
+      </script>
+      <br><br>
+    </font>
 
   </body>
 </html>
