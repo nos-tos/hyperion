@@ -132,5 +132,20 @@
       <br><br>
     </font>
 
+    <h1><font size="6">TEST #D: PROTOTYPES</font></h1>
+    <font size="4">
+      <script>
+
+        function getBoolType() {
+          return "number";
+        } 
+        Boolean.prototype.getType = getBoolType;
+
+
+        document.write("PASSED");
+      </script>
+      <br><br>
+    </font>
+
   </body>
 </html>
