@@ -132,21 +132,25 @@
       <br><br>
     </font>
 
-    <h1><font size="6">TEST #D: PROTOTYPES</font></h1>
+    <h1><font size="6">TEST #D: INTERNAL PROTOTYPES</font></h1>
     <font size="4">
       <script>
 
         function getBoolType() {
           return "number";
-        } 
-        Boolean.prototype.getType = getBoolType;
+        }
+        
+        function MyNumber() {
+          this.getType = getBoolType;
+        }
 
+        var x = new MyNumber();
 
         document.write("PASSED");
       </script>
       <br><br>
 
-    <h1><font size="6">TEST #E: Object Generators</font></h1>
+    <h1><font size="6">TEST #E: OBJECT GENERATORS</font></h1>
     <font size="4">
       <script>
 
@@ -156,6 +160,19 @@
 
         var testE_obj = new HalfBool(false);
         document.write("PASSED");
+      </script>
+      <br><br>
+    </font>
+
+    <h1><font size="6">TEST #F: STANDARD MAX INT</font></h1>
+    <font size="4">
+      <script>       
+        
+        x = Math.pow(2, 1023) * (2 - Math.pow(2, -52));
+        document.write(x);
+        if (Infinity) {
+          document.write("PASSED");
+        }
       </script>
       <br><br>
     </font>
